@@ -4,21 +4,91 @@
     <meta charset="utf-8" />
     <title>Unit 4 - Flexbox</title>
     <style>
+
+      .goog{
+        background-color: brown;
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .doodoo{
+        background-color: rgb(92, 92, 190);
+        width: 700px;
+      }
+
+      
+.parallax {
+  
+  background-image: url("https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654581271i/61242426.jpg");
+
+  
+  min-height: 500px;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes myAnimation {
+  from {
+    transform-origin: top center;
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(15deg);
+  }
+  51% {
+    transform: rotate(352deg);
+  }
+  96% {
+    transform: rotate(5deg);
+  }
+  98% {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform-origin: top center;
+    transform: rotate(0deg);
+  }
+}
+
+.animated-element {
+  animation-name: myAnimation;
+  animation-duration: 4.8s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+
+  
+
     </style>
   </head>
   <body>
-    <h1>Cozy Reads</h1>
 
-      <img
-        src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654581271i/61242426.jpg"
-        width="200"
-      />
-      <p>
+  
+    <h1>Cozy Reads</h1>
+    <div class="goog">
+
+      
+<div class="parallax"><img
+        "
+        width="600" class="doodoo"
+      /></div>
+      <p class="doodoo">
         It’s not easy to build a coffee shop in a place that has never had
         coffee before. #CozyFantasy
-      </p>
+      </p></div>
 
-    <img
+    <img class="animated-element"
       src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1569514209i/45047384.jpg"
       width="200"
     />
